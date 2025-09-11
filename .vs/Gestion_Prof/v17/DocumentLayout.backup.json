@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Professeur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Professeur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Etudiant.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Etudiant.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\DossierProfesseur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:DossierProfesseur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Cours.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Cours.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Gestion_Prof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Gestion_Prof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -14,11 +30,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DossierProfesseur.cpp",
+              "DocumentMoniker": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\DossierProfesseur.cpp",
+              "RelativeDocumentMoniker": "DossierProfesseur.cpp",
+              "ToolTip": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\DossierProfesseur.cpp",
+              "RelativeToolTip": "DossierProfesseur.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-11T00:23:22.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Etudiant.cpp",
+              "DocumentMoniker": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Etudiant.cpp",
+              "RelativeDocumentMoniker": "Etudiant.cpp",
+              "ToolTip": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Etudiant.cpp",
+              "RelativeToolTip": "Etudiant.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-11T00:14:18.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cours.cpp",
+              "DocumentMoniker": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Cours.cpp",
+              "RelativeDocumentMoniker": "Cours.cpp",
+              "ToolTip": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Cours.cpp",
+              "RelativeToolTip": "Cours.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-11T00:12:49.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Professeur.cpp",
+              "DocumentMoniker": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Professeur.cpp",
+              "RelativeDocumentMoniker": "Professeur.cpp",
+              "ToolTip": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Professeur.cpp",
+              "RelativeToolTip": "Professeur.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-11T00:12:34.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Gestion_Prof.cpp",
               "DocumentMoniker": "C:\\Users\\esimard32\\Desktop\\Tp1_Structure\\Gestion_Prof.cpp",
               "RelativeDocumentMoniker": "Gestion_Prof.cpp",
