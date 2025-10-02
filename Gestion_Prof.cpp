@@ -2,10 +2,24 @@
 //
 
 #include <iostream>
+#include "DossierProfesseur.cpp"
+#include<string>
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	//On veux get le chemin du FP par l'utilisateur
+	std::string chemin;
+	std::cout << "Entrez le chemin du fichier FP : ";
+	std::getline(std::cin, chemin);
+
+	try {
+		DossierProfesseur dossier(chemin);
+	}
+	catch (const std::exception& e) {
+		std::cerr << "Erreur : " << e.what() << std::endl;
+	}
+
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

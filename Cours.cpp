@@ -3,5 +3,5 @@
 struct Cours
 {
 	std::string sigle;
-	Cours* suivant;
+	Cours* suivant = nullptr;
 };

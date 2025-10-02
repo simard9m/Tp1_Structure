@@ -133,6 +133,10 @@
     <ClCompile Include="Gestion_Prof.cpp" />
     <ClCompile Include="Professeur.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="FP.txt" />
+    <Text Include="FT.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

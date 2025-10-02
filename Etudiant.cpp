@@ -3,5 +3,5 @@
 struct Etudiant
 {
 	std::string nom;
-	Etudiant* apres;
+	Etudiant* apres = nullptr;
 };
