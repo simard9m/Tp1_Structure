@@ -15,6 +15,7 @@ int main()
 
 	try {
 		DossierProfesseur dossier(chemin);
+		dossier.afficher();
 	}
 	catch (const std::exception& e) {
 		std::cerr << "Erreur : " << e.what() << std::endl;
