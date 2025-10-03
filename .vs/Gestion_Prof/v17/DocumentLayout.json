@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\",
+  "WorkspaceRootPath": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\DossierProfesseur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\DossierProfesseur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:DossierProfesseur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Etudiant.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Etudiant.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Professeur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Professeur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\FT.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\FT.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:FT.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Gestion_Prof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Gestion_Prof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\FP.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\FP.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:FP.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Cours.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Gestion_Prof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Gestion_Prof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Etudiant.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Etudiant.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Professeur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Professeur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Cours.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{18D68CF5-A3BE-4DD5-894E-A8232501176F}|Gestion_Prof.vcxproj|solutionrelative:Cours.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -48,11 +48,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FT.txt",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\FT.txt",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\FT.txt",
               "RelativeDocumentMoniker": "FT.txt",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\FT.txt",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\FT.txt",
               "RelativeToolTip": "FT.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -62,11 +62,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "FP.txt",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\FP.txt",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\FP.txt",
               "RelativeDocumentMoniker": "FP.txt",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\FP.txt",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\FP.txt",
               "RelativeToolTip": "FP.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -78,22 +78,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DossierProfesseur.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\DossierProfesseur.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\DossierProfesseur.cpp",
               "RelativeDocumentMoniker": "DossierProfesseur.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\DossierProfesseur.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\DossierProfesseur.cpp",
               "RelativeToolTip": "DossierProfesseur.cpp",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAuwLUAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAAN4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-01T21:55:52.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Etudiant.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Etudiant.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Etudiant.cpp",
               "RelativeDocumentMoniker": "Etudiant.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Etudiant.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Etudiant.cpp",
               "RelativeToolTip": "Etudiant.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -104,49 +104,47 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Cours.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Cours.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Cours.cpp",
               "RelativeDocumentMoniker": "Cours.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Cours.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Cours.cpp",
               "RelativeToolTip": "Cours.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-02T00:22:11.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T00:22:11.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Gestion_Prof.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Gestion_Prof.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Gestion_Prof.cpp",
               "RelativeDocumentMoniker": "Gestion_Prof.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Gestion_Prof.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Gestion_Prof.cpp",
               "RelativeToolTip": "Gestion_Prof.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-02T00:01:59.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Professeur.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Professeur.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Professeur.cpp",
               "RelativeDocumentMoniker": "Professeur.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp1_Structure\\Professeur.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\SchoolWork\\Tp1_Structure\\Professeur.cpp",
               "RelativeToolTip": "Professeur.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-01T21:57:08.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T21:57:08.331Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "FP.txt",
               "DocumentMoniker": "C:\\Users\\\u00C9mile\\Downloads\\FP.txt",
-              "RelativeDocumentMoniker": "..\\..\\Downloads\\FP.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\\u00C9mile\\Downloads\\FP.txt",
               "ToolTip": "C:\\Users\\\u00C9mile\\Downloads\\FP.txt",
-              "RelativeToolTip": "..\\..\\Downloads\\FP.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\\u00C9mile\\Downloads\\FP.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-10-01T21:51:34.444Z"
@@ -156,9 +154,9 @@
               "DocumentIndex": 7,
               "Title": "FT.txt",
               "DocumentMoniker": "C:\\Users\\\u00C9mile\\Downloads\\FT.txt",
-              "RelativeDocumentMoniker": "..\\..\\Downloads\\FT.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\\u00C9mile\\Downloads\\FT.txt",
               "ToolTip": "C:\\Users\\\u00C9mile\\Downloads\\FT.txt",
-              "RelativeToolTip": "..\\..\\Downloads\\FT.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\\u00C9mile\\Downloads\\FT.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-10-01T21:51:32.461Z"

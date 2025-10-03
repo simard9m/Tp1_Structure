@@ -1,5 +1,11 @@
 #include<fstream>
 #include<iostream>
+#include<stdexcept>
+#include<filesystem>
+#include<chrono>
+#include<iomanip>
+#include<sstream>
+#include<cctype>
 #include "Professeur.cpp"
 
 
@@ -58,6 +64,171 @@ private:
 		}
 		return false;
 	}
+
+	//compte les etudiants d'un prof
+	static int compterEtudiants(const Professeur* p) {
+		int n = 0;
+		for (const Etudiant* e = p->listetudiant;e;e = e->apres)
+			n++;
+		return n;
+	}
+
+	//Test si un prof a un sigle
+	bool profPossedeCours(const Professeur* p, const std::string& sigle)const {
+		for (const Cours* c = p->listecours;c;c = c->suivant) {
+			if (c->sigle == sigle)
+				return true;
+		}
+		return false;
+	}
+
+	//Eciter de traiter deux fosi le meme sigle dans le meme prof
+	static bool coursDejaVuDansProf(const Cours* head, const Cours* node) {
+		for (const Cours* x = head; x && x != node;x = x->suivant) {
+			if (x->sigle == node->sigle)
+				return true;
+		}
+		return false;
+	}
+
+	//Supp les profs avec le nom
+	void supprimer(const std::string& name) {
+		Professeur** cur = &tete;
+		while (*cur) {
+			if ((*cur)->nom == name) {
+				Professeur* dead = *cur;
+
+				//Del cours
+				Cours* c = dead->listecours;
+				while (c) {
+					Cours* nx = c->suivant;
+					delete c;
+					c = nx;
+				}
+
+				//Del etu
+				Etudiant* e = dead->listetudiant;
+				while (e) {
+					Etudiant* nx = e->apres;
+					delete e;
+					e = nx;
+				}
+
+				*cur = dead->suivant;
+				delete dead;
+			}
+			else {
+				cur = &((*cur)->suivant);
+			}
+		}
+	}
+
+	//Afiicher le prof avec le plus d'etu
+	std::string afficherProfPlusEtu() const {
+		if (!tete) 
+			return std::string();
+
+		const Professeur* best = tete;
+		int bestCnt = compterEtudiants(tete);
+
+		for (const Professeur* p = tete->suivant;p;p = p->suivant) {
+			int cnt = compterEtudiants(p);
+			if (cnt > bestCnt) {
+				best = p;
+				bestCnt = cnt;
+			}
+		}
+		return best ? best->nom : std::string();
+	}
+
+	//Afficher le cours le plus demandé
+	std::string afficherCoursPlusDemande()const {
+		if (!tete)
+			return std::string();
+
+		std::string bestCours;
+		//freq max
+		int bestCompte = -1;
+		//Anciennete du prof du best cours
+		int bestAncien = 0;
+
+		//Check le prof dans l'ordre
+		for (const Professeur* p = tete;p;p = p->suivant) {
+			for (const Cours* c = p->listecours;c;c = c->suivant) {
+				//ne compte le sigle 1 seule fois
+				if (coursDejaVuDansProf(p->listecours, c))
+					continue;
+
+				//Calc de freq globale
+				int freq = 0;
+				for (const Professeur* q = tete;q;q = q->suivant) {
+					bool aCeCours = false;
+					for (const Cours* cq = q->listecours;cq;cq = cq->suivant) {
+						if (cq->sigle == c->sigle) {
+							aCeCours = true;
+							break;
+						}
+						if (aCeCours)
+							freq++;
+					}
+					if (bestCompte == -1) {
+						//Permier candidat
+						bestCompte = freq;
+						bestCours = c->sigle;
+						bestAncien = p->ancien;
+					}
+					else if (freq > bestCompte) {
+						bestCompte = freq;
+						bestCours = c->sigle;
+						bestAncien = p->ancien;
+					}
+					else if (freq == bestCompte) {
+						//tie break du prof le moins ancien
+						if (p->ancien < bestAncien) {
+							bestCours = c->sigle;
+							bestAncien = p->ancien;
+						}
+						//si c'est egal on garde le premier rencontré
+					}
+				}
+			}
+		}
+		return bestCompte == -1 ? std::string() : bestCours;
+	}
+
+	//Nombre de prof pour un cours
+	int afficherNbreProfPourUnCours(const std::string& sigle) const {
+		if (sigle.empty())
+			return 0;
+		int total = 0;
+		for (const Professeur* p = tete;p;p = p->suivant) {
+			//compter au plus une fois par prof
+			if (profPossedeCours(p, sigle))
+				total++;
+		}
+		return total;
+	}
+
+	void recopier(const std::string& FP)const {
+		std::ofstream out(FP.c_str(), std::ios::trunc);
+		if (!out.is_open())
+			throw std::runtime_error("Impossible d'ouvrir " + FP);
+
+		for (const Professeur* p = tete;p;p=p->suivant) {
+			out << p->nom << "\n";
+			out << p->ancien << "\n";
+			for (const Cours* c = p->listecours;c;c = c->suivant) {
+				out << c->sigle << "\n";
+			}
+			out << "&\n";
+			for (const Etudiant* e = p->listetudiant;e;e = e->apres) {
+				out << e->nom << "\n";
+			}
+			if (p->suivant)
+				out << "&\n";
+		}
+	}
+
 public:
 	DossierProfesseur(std::string PFPath) {
 		std::ifstream f(PFPath);
@@ -165,12 +336,12 @@ public:
 
 	void afficher() const {
 		for (const Professeur* p = tete; p; p = p->suivant) {
-			std::cout << "prof: " << p->nom << "anciennete: " << p->ancien << ")\n";
-			std::cout << "cours :";
+			std::cout << "prof: " << p->nom << " anciennete: " << p->ancien << "\n";
+			std::cout << "cours : ";
 			if (!p->listecours)
 				std::cout << "Aucun";
 			for (const Cours* c = p->listecours; c; c = c->suivant)
-				std::cout << c->sigle << (c->suivant ? ", " : " ");
+				std::cout << c->sigle << (c->suivant ? ", " : "");
 			std::cout << "\n Etudiant: ";
 			if (!p->listetudiant)
 				std::cout << "Aucun";
