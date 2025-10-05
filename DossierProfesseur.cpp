@@ -34,18 +34,43 @@ private:
 
 	//methodes pour les ajouts
 
-	static void ajouterCours(Professeur* prof, const std::string& sigle) {
-		Cours* c = new Cours{ sigle,prof->listecours };
-		prof->listecours = c;
+	static void ajouterCoursFin(Professeur* prof, const std::string& sigle) {
+		Cours* c = new Cours{ sigle,nullptr };
+		if (!prof->listecours) {
+			prof->listecours = c;
+			return;
+		}
+		Cours* t = prof->listecours;
+		while (t->suivant) {
+			t = t->suivant;
+
+		}
+		t->suivant = c;
 	}
 
-	static void ajouterEtu(Professeur* prof, const std::string& nom) {
-		Etudiant* e = new Etudiant{ nom,prof->listetudiant };
-		prof->listetudiant = e;
+	static void ajouterEtuFin(Professeur* prof, const std::string& nom) {
+		Etudiant* e = new Etudiant{ nom,nullptr };
+		if (!prof->listetudiant) {
+			prof->listetudiant = e;
+			return;
+		}
+		Etudiant* t = prof->listetudiant;
+		while (t->apres) {
+			t = t->apres;
+
+		}
+		t->apres = e;
 	}
-	void ajouterProfTete(Professeur* p) {
-		p->suivant = tete;
-		tete = p;
+	void ajouterProfTeteFin(Professeur* p) {
+		if (!tete) {
+			tete = p;
+			return;
+		}
+		Professeur* t = tete;
+		while (t->suivant) {
+			t = t->suivant;
+		}
+		t->suivant = p;
 	}
 
 	//MEthode de lecture retourne faux si fin
@@ -278,7 +303,7 @@ public:
 				if (line == "&")
 					break;
 
-				ajouterCours(p, line);
+				ajouterCoursFin(p, line);
 			}
 
 			//Etufiant
@@ -286,7 +311,7 @@ public:
 				std::streampos posAvant = f.tellg();
 				if (!lireLigneSignificative(f, line)) {
 					//fin du fichier
-					ajouterProfTete(p);
+					ajouterProfTeteFin(p);
 					p = nullptr;
 
 					//sortie du while true
@@ -294,12 +319,12 @@ public:
 				}
 				if (line == "&") {
 					//fin du prof passe au prochaine
-					ajouterProfTete(p);
+					ajouterProfTeteFin(p);
 					p = nullptr;
 					break;
 				}
 				//sinon add un etudiant yaay
-				ajouterEtu(p, line);
+				ajouterEtuFin(p, line);
 			}
 
 			//pass au prochain prof

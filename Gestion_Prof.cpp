@@ -28,7 +28,7 @@ int main()
 		std::cerr << "Erreur : " << e.what() << std::endl;
 	}
 
-	dossier.afficher();
+	//dossier.afficher();
 
 }
 
