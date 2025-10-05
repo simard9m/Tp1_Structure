@@ -31,4 +31,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="FP.txt" />
+    <Text Include="FT.txt" />
+    <Text Include="FpTest.txt" />
+  </ItemGroup>
 </Project>

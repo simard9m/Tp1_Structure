@@ -1,11 +1,11 @@
 #include<fstream>
 #include<iostream>
 #include<stdexcept>
-#include<filesystem>
 #include<chrono>
 #include<iomanip>
 #include<sstream>
 #include<cctype>
+#include<filesystem>
 #include "Professeur.cpp"
 
 
@@ -92,11 +92,13 @@ private:
 	}
 
 	//Supp les profs avec le nom
-	void supprimer(const std::string& name) {
+	bool supprimer(const std::string& name) {
 		Professeur** cur = &tete;
+		bool profExistant = false;
 		while (*cur) {
 			if ((*cur)->nom == name) {
 				Professeur* dead = *cur;
+				profExistant = true;
 
 				//Del cours
 				Cours* c = dead->listecours;
@@ -121,6 +123,7 @@ private:
 				cur = &((*cur)->suivant);
 			}
 		}
+		return profExistant;
 	}
 
 	//Afiicher le prof avec le plus d'etu
@@ -243,7 +246,7 @@ public:
 				break;
 				//Fin du fichier si rien a lire ici
 			}
-
+			
 			//anciennent
 			std::string ancienStr;
 			if (!lireLigneSignificative(f, ancienStr)) {
@@ -348,6 +351,69 @@ public:
 			for (const Etudiant* e = p->listetudiant; e; e = e->apres)
 				std::cout << e->nom << (e->apres ? ", " : "");
 			std::cout << "\n\n";
+		}
+	}
+
+	void executerFT(const std::string& FT, const std::string FP) {
+		std::ifstream in(FT.c_str());
+		if (!in.is_open())
+			throw std::runtime_error("Impossible d'ouvrir le fichier ft" + FT);
+
+		std::string line;
+		while (std::getline(in, line)) {
+			line = trim(line);
+
+			if (line.empty())
+				continue;
+
+			//si ligne #
+			if (line == "#") {
+				std::string nom = afficherProfPlusEtu();
+				if (!nom.empty())
+					std::cout << "Le prof avec le plus d'etudiants est : " << nom << "\n";
+				else
+					std::cout << "La liste est vide\n";
+				continue;
+			}
+
+			//Cours plus demande
+			if (line == "*") {
+				std::string cours = afficherCoursPlusDemande();
+				if (!cours.empty())
+					std::cout << "Le cours le plus demande est : " << cours << "\n";
+				else
+					std::cout << "La liste est vide\n";
+				continue;
+			}
+
+			//Nombre de prof pour un cours
+			if (line[0] ==  '%') {
+				std::string sigle = trim(line.substr(1));
+				int n = afficherNbreProfPourUnCours(sigle);
+				if (n <= 0)
+					std::cout << "Le cours " << sigle << " n'existe pas dans la liste\n";
+				else
+					std::cout << "Il y a " << n << " professeur pour le cours " << sigle << "\n";
+				continue;
+			}
+
+			//le delete
+			if (line[0] == '-') {
+				std::string nom = trim(line.substr(1));
+				if (supprimer(nom))
+					std::cout << nom << " Supprime avec succes\n";
+				else
+					std::cout << "Professeur introuvable pour suppression : " << nom << "\n";
+				continue;
+			}
+
+			//le copy
+			if (line[0] == '$') {
+				recopier(FP);
+				std::cout << "Recopie du document faite\n";
+				continue;
+			}
+
 		}
 	}
 };
