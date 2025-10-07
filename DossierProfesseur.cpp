@@ -237,10 +237,46 @@ private:
 		return total;
 	}
 
-	void recopier(const std::string& FP)const {
-		std::ofstream out(FP.c_str(), std::ios::trunc);
+	static bool fichierExistant(const std::string& path) {
+		std::ifstream test(path.c_str());
+		return test.is_open();
+	}
+
+	static std::string nomFichier(const std::string& FP) {
+		if (!fichierExistant(FP)) 
+			return FP;
+
+		// Chercher extension (.txt par ex.)
+		size_t dotPos = FP.find_last_of('.');
+		std::string base;
+		std::string ext;
+		if (dotPos == std::string::npos) {
+			base = FP;
+			ext = "";
+		}
+		else {
+			base = FP.substr(0, dotPos);
+			ext = FP.substr(dotPos);
+		}
+
+		// Ajouter compteur (1), (2), etc.
+		for (int i = 1; i < 1000; ++i) {
+			std::ostringstream oss;
+			oss << base << "(" << i << ")" << ext;
+			std::string candidate = oss.str();
+			if (!fichierExistant(candidate)) {
+				return candidate;
+			}
+		}
+
+		throw std::runtime_error("Impossible de générer un nom unique pour " + FP);
+	}
+
+	std::string recopier(const std::string& FP)const {
+		std::string outPath = nomFichier(FP);
+		std::ofstream out(outPath.c_str(), std::ios::out);
 		if (!out.is_open())
-			throw std::runtime_error("Impossible d'ouvrir " + FP);
+			throw std::runtime_error("Impossible d'ouvrir " + outPath);
 
 		for (const Professeur* p = tete;p;p=p->suivant) {
 			out << p->nom << "\n";
@@ -255,6 +291,8 @@ private:
 			if (p->suivant)
 				out << "&\n";
 		}
+
+		return outPath;
 	}
 
 public:
@@ -434,8 +472,8 @@ public:
 
 			//le copy
 			if (line[0] == '$') {
-				recopier(FP);
-				std::cout << "Recopie du document faite\n";
+				std::string l = recopier(FP);
+				std::cout << "Recopie du document faite : " << l << "\n";
 				continue;
 			}
 

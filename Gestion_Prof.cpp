@@ -14,7 +14,7 @@ int main()
 	std::getline(std::cin, chemin);
 
 	DossierProfesseur dossier = DossierProfesseur(chemin);
-	dossier.afficher();
+	//dossier.afficher();
 
 
 	std::string cheminTransact;
